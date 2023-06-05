@@ -1,4 +1,5 @@
-// lambda.ts
+import 'source-map-support/register'
+
 import {Handler, Context} from 'aws-lambda'
 import {Server} from 'http'
 import {createServer, proxy} from 'aws-serverless-express'

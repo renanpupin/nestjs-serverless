@@ -1,6 +1,9 @@
+org: renanpantore
+app: nestjs-serverless
 service: nestjs-serverless
 
 plugins:
+  - serverless-plugin-typescript
   - serverless-offline
 
 provider:
@@ -9,7 +12,7 @@ provider:
 
 functions:
   main:
-    handler: dist/lambda.handler
+    handler: src/lambda.handler
     events:
       - http:
           method: ANY
