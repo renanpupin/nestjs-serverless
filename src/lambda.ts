@@ -1,4 +1,4 @@
-import 'source-map-support/register'
+// import 'source-map-support/register'
 
 import {Handler, Context} from 'aws-lambda'
 import {Server} from 'http'
